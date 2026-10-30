@@ -1,2 +1,3 @@
 # cudaq-docs
-CUDA-Q documentation
+
+Documentation and notes for CUDA-Q.
