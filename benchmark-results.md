@@ -25,4 +25,5 @@ The cudaq-guide skill could be improved by adding both positive and plausible ne
 [CUDAQ Benchmark - No Skills.ipynb](https://colab.research.google.com/drive/1BGiSE8UL96q9T4uXFlQWXcMiFhod0ive?usp=sharing)
 [CUDAQ Benchmark - llmstxt.ipynb](https://colab.research.google.com/drive/1vsoXVAv9-F4W63m7APkWe45Og5eV97V1?usp=sharing)
 [CUDAQ Benchmark - cudaqguide.ipynb](https://colab.research.google.com/drive/1pEZ5uq1u8IJPSpLxSkTT_UQ5skspyibd?usp=sharing)
+[CUDAQ Benchmark - revised-llmstxt.ipynb](https://colab.research.google.com/drive/1cpzbhqff0dRFtt2D45SEq8mag2zbc3bQ?usp=sharing)
 [CUDA-Q Script Test Matrix (Google Spreadsheet)](https://docs.google.com/spreadsheets/d/13ViB_eKbL3Dr6iy9VP4_WvjlKQV41VQPCtE4-x6D-Vk/edit?usp=sharing)
