@@ -5,4 +5,5 @@
 As an attempt to improve performance for CUDA-Q users, I ran benchmarks to identify problem areas, revised the llms.txt for improved effectiveness, and measured improvements against the listed benchmarks.
 
 [llms.txt](llms.txt) is the revised version of llms.txt, organized by how an LLM would use the documentation for CUDA-Q, with examples (links to documentation) added for some common pitfalls.
+
 [Benchmark Results](benchmark-results.md) shows results of a benchmark showing the utility of llms.txt and cudaq-guide skill, showing improvements of the revised version.
