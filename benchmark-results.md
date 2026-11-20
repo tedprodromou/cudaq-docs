@@ -2,19 +2,22 @@
 
 Test notes for LLM-automated CUDA-Q Python code generation, showing improvement using llms.txt and cuda-q skills. Tests were run on Google Colab in October 2026, running Gemini 3.5 Flash with NVIDIA CUDA-Q for quantum simulation.
 
-Ran tests to generate Python scripts based on common quantum computing tasks, with 15 prompts given beforehand. Ran test series three times, once with only cuda-q loaded, once with llms.txt additionally loaded, and once with cudaq-guide additionally loaded.
+Ran tests to generate Python scripts based on common quantum computing tasks, with 14 prompts given beforehand. Ran test series four times: once with only cuda-q loaded, once with the original llms.txt ([previous version](llms-old.txt)) additionally loaded, once with cudaq-guide additionally loaded, and once with the [revised llms.txt](llms.txt) loaded.
 
 ## Results
 
-* Without llms.txt or skills: 3 passed without errors, 8 passed after errors, 3 never passed. Average 1.8 errors per completed task.
+* Without llms.txt or skills: 3 passed without errors, 7 passed after errors, 4 never passed. Average 1.8 errors per completed task.
 * With llms.txt: 7 passed without errors, 5 passed after errors, 2 never passed. Average 1.5 errors per completed task.
 * With llms.txt and cudaq-guide skill: 6 passed without errors, 5 passed after errors, 3 never passed. Average 1.45 errors per completed task.
+* With revised llms.txt: 7 passed without errors, 5 passed after errors, 2 never passed. Average 0.75 errors per completed task.
 
-Using llms.txt unambiguously improved results, with 1 more test passed, 4 more tests passed without errors, and fewer errors per task.
+Using llms.txt unambiguously improved results, with 2 more tests passed, 4 more tests passed without errors, and fewer errors per task.
 
-Using the cudaq-guide skills as well as llms.txt was more ambiguous, with fewer tests passed overally but even lower errors per task.
+Using the cudaq-guide skills as well as llms.txt was more ambiguous, with fewer tests passed overall but even lower errors per task.
 
 Specifically, the cudaq-guide skill had problems understanding when to use the cudaq.sample versus cudaq.run method and difficulty with variational optimization. However, the cudaq-guide skill was needed to prepare code for real Quantinuum hardware.
+
+The revised llms.txt matched the original llms.txt's pass rate and cut errors per completed task in half, from 1.5 to 0.75.
 
 ## Conclusions
 
